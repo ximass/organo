@@ -9,7 +9,7 @@ function Time (props) {
             <div className="usuarios">
                 {
                     props.usuarios.map(usuario => 
-                        <Usuario key={usuario.nome} nome={usuario.nome} cargo={usuario.cargo} imagem={usuario.imagem}/>
+                        <Usuario corFundo={props.corPrimaria} key={usuario.nome} nome={usuario.nome} cargo={usuario.cargo} imagem={usuario.imagem}/>
                     )
                 }
             </div>

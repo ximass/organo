@@ -1,9 +1,9 @@
 import './Usuario.css';
 
-function Usuario ({ nome, imagem, cargo }) {
+function Usuario ({ nome, imagem, cargo, corFundo }) {
     return (
         <div className="usuario">
-            <div className="cabecalho">
+            <div className="cabecalho" style={{backgroundColor: corFundo}}>
                 <img src={imagem} alt={nome}></img>
             </div>
             <div className="rodape">
